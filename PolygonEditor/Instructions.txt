@@ -1,0 +1,56 @@
+TWORZENIE NOWEGO WIELOKĄTU:
+
+	- za pomocą lewego przycisku myszki klikając na canvę "rysujemy" kolejno wierzchołki
+	- by zamknąć wielokąt wystarczy kliknąć na pierwszy wierzchołek (podświetlony na zielono)
+		UWAGA: wielokąt się nie zamknie, jeśli są < 3 wierzchołki
+	- jest możliwość usuwania wierzchołków
+	USUWANIE WIERZCHOŁKÓW:
+		- można usuwać wierzchołki kiedy klikniemy na wierzchołek lewym przyciskiem myszy i ten wierzchołek się podświetli na czerwono,
+		z wyjątkiem pierwszego gdy liczba wierzchołków > 3 (ponieważ wielokąt się zamknie)
+	UWAGA:
+		- tworzenie nie jest możliwe w przypadku wejścia w RELATIONS AND RESTRICTIONS MODE
+
+MODYFIKACJA WIELOKĄTU:
+
+	- RUSZANIE WIERZCHOŁKA:
+		- wystraczy najechać myszką na wierzchołek, "chwycić" go lewym przyciskiem i poruszać myszką. 
+		By go "odstawić" wystaczy "puścić" wierzchołek
+		- dopuszczone w trakcie tworzenia wielokątu, ale nie można przestawiać niedokończonego wielokątu
+	- RUSZANIE KRAWĘDZIĄ:
+		- analogicznie do wierzchołka, wystarczy "chwycić" krawędź
+	- RUSZANIE CAŁEGO WIELOKĄTA:
+		- analogicznie do ruszania krawędzi, tylko trzeba "chwycić" krawędź prawym przyciskiem myszy
+	- USUWANIE WIERZCHOŁKA:
+		- wystarczy kliknąć na wierzchołek i gdy będzie podświetlony na czerwono, trzeba kliknąć button 'Delete Vertex'
+		- UWAGA: przy usuwaniu wierzchołku trójkąta, wielokąt zostanie całkowicie usunięty
+		- nie działa w przypadku tworzenia nowego wielokątu
+	- DODAWANIE WIERZCHOŁKA NA WYBRANEJ KRAWĘDZI:
+		- wystarczy kliknąć na krawędź i wierzchołek się doda w wybranym miejscu
+		- nie działa w przypadku tworzenia nowego wielokątu
+	UWAGA:
+		- modyfikacja nie jest możliwe w przypadku wejścia w RELATIONS AND RESTRICTIONS MODE
+
+RELATIONS AND RESTRICTIONS MODE:
+
+	- aby wejść w tryb RELATIONS AND RESTRICTIONS MODE należy wcisnąć button 'Enter relations mode'
+
+	DODAWANIE/USUWANIE RELACJI:
+		- należy zaznaczyć krawędź(zaznacza się na fioletowo), wówczas jeśli jest możliwość dodania ograniczenia na długość(dana krawędź nie jest w relacji/ograniczona),
+	 	to pojawi się przycisk 'Restrict Length'. W przeciwnym przypadku, będzie można albo usunąć relacje na krawędzi za pomocą przycisku 'Delete',
+		albo wyjść z trybu RELATIONS AND RESTRICTIONS MODE za pomocą przycisku 'Cancel'
+		- by dodać relację prostopadłości, należy zaznaczyć dwie krawędzie nie będące w relacji/ograniczone
+		- by usunąć relację prostopoadłości należy zaznaczyć jedną z krawędzi będącej w tej relacji i kliknąć button 'Delete'
+		- by wyjść z trybu relacji należy nacisnąć przycisk 'Cancel'
+		- by zmienić zaznaczone krawędzie należy nacisnąć przycisk 'Cancel' oraz wejść znowu w tryb edycji
+		- relacja prostopadłości pojawi się przy próbie ruszenia jednym z wierzchołków krawędzi należącej do tej relacji
+	OZNACZENIA:
+		LR - ograniczenie długości
+		P + unique_id_relacji_prostopadłości - relacja prostopadłości
+RELACJE:
+	OGRANICZENIE NA DŁUGOŚĆ:
+	- ograniczając krawędź na długość "blokujemy" jej dotychczasową długość
+	ALGORYTM RELACJI:
+	- po każdym ruchu dla każdej relacji sprawdza czy jest poprawna i jeśli nie to jest poprawiana, uwzględniając wierzchołek który 
+	nie ma się ruszyć
+	-nie zawsze działa dla ruszania relacji na różnych wielokątach(gdy jest ich dużo)
+ 

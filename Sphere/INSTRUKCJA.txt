@@ -1,0 +1,9 @@
+INSTRUKCJA (chociaż wydaje mi się, że większość powinna być intuicyjna)
+
+Kolor wypełnienia punktu wewnątrz trójkąta jest wyznaczany przez radiobuttons:
+ - domyślnie wyznaczany tylko w wierzchołkach trójkątów a potem interpolowany 'do wnętrza'
+Możliwość dodania tekstury za pomocą przycisku 'Change texture'
+Możliwość dodania mapy wektorów normalnych za pomocą przycisku 'Change normal map'
+Możliwość usunięcia mapy wektorów normalnych za pomocą przycisku 'Revert normal map'
+Zmiana koloru światła za pomocą przycisku "Select color"
+Możliwość narysowania/lub nie krawędzi za pomocą checkboxa 'Draw edges'

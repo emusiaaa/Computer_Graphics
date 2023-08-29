@@ -1,0 +1,8 @@
+INSTRUKCJA:
+
+- ładujemy zdjęcie za pomocą button'a upload image
+- wybieramy algorytm redukcji kolorów (radiobuttons)
+- wybieramy wybrane parametry do wybranego algorytmu
+- przyciskamy button apply, by zredukować kolory wybranym algorytmem
+
+ uwagi: by odblokować button apply, wystarczy zmienić parametr/algorytm
